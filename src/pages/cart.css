@@ -1,0 +1,122 @@
+.cart {
+    padding-block: var(--padding-section);
+    min-height: calc(100vh - 64px);
+}
+.cart .clear {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.cart .wrapper {
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+}
+.cart .wrapper .cards {
+    flex: 1;
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px 30px;
+}
+.cart .cards .card {
+    display: grid;
+    grid-template-columns: 90px repeat(3, 1fr);
+    box-shadow: 0px 1px 7px 2px rgb(0 0 0 / 15%);
+    padding: 12px;
+    border-radius: 5px;
+    position: relative;
+}
+.cart .cards .card div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.cart .cards .card .quantity button {
+    background-color: #222;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cart .cards .card img {
+    width: 82%;
+}
+.cart .cards .card .delete {
+    background-color: var(--main-color);
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cart .wrapper .summary {
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+@media (max-width: 767px) {
+    .cart .wrapper {
+        flex-direction: column;
+    }
+    .cart .wrapper .summary {
+        width: 100%;
+    }
+
+}
+.cart .summary h3 {
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.cart .summary ul {
+    display: flex;
+    flex-direction: column;
+}
+.cart .summary ul li {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cart .summary button {
+    background-color: var(--main-color);
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.cart h2 {
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}

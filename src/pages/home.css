@@ -1,0 +1,110 @@
+.category,
+.products {
+    padding-block: var(--padding-section);
+}
+.category .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    height: 325px;
+}
+.category .cards .card {
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.category .cards .card:nth-child(1) {
+    background-image: url(../assets/category-1.webp);
+}
+.category .cards .card:nth-child(2) {
+    background-image: url(../assets/category-2.webp);
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+.category .cards .card:nth-child(3) {
+    background-image: url(../assets/category-3.webp);
+}
+.category .cards .card:nth-child(4) {
+    background-image: url(../assets/category-4.webp);
+}
+.category .cards .card:nth-child(5) {
+    background-image: url(../assets/category-5.webp);
+}
+@media (max-width: 767px) {
+    .category .cards .card:nth-child(1),
+    .category .cards .card:nth-child(3) {
+        grid-column: 1 / 3;
+    }
+    .category .cards .card:nth-child(2) {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+    }
+    .category .cards .card:nth-child(4) {
+        grid-column: 3 / 5;
+    }
+    .category .cards .card:nth-child(5) {
+        grid-column: 1 / 5;
+    }
+}
+.category .cards .card::before {
+    content: "";
+    background-color: rgb(0 0 0 / 42%);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+.category .cards .card span {
+    position: relative;
+    z-index: 1;
+}
+.products .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.products .cards .card {
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+}
+.products .cards .card img {
+    width: 50%;
+}
+.products .cards .card h4 {
+    font-weight: 600;
+}
+.products .cards .card p {
+    font-weight: 600;
+    margin-block: 8px;
+}
+.products .cards .card .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.products .cards .card .btns .heart {
+    font-size: 24px;
+}
+.products .cards .card .btns .add {
+    background-color: var(--main-color);
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}

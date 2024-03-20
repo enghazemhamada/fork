@@ -1,0 +1,69 @@
+.footer {
+    padding-top: var(--padding-section);
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 35px;
+}
+.footer .box h2 {
+    color: var(--main-color);
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.footer .box p {
+    text-transform: capitalize;
+    color: #222;
+    font-size: 15px;
+    line-height: var(--line-height);
+    font-weight: 500;
+}
+.footer h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.footer .links ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer .links ul li a {
+    display: block;
+    padding: 5px;
+    color: #222;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.footer .links ul li a:hover {
+    color: var(--main-color);
+}
+.footer .info .line {
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.footer .info .line svg {
+    font-size: 18px;
+}
+.footer .info .line div {
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.footer .info .line div span {
+    display: block;
+}
+.footer .copyRight {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+}
+.footer .copyRight span {
+    color: var(--main-color);
+    font-weight: 700;
+}

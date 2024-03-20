@@ -1,0 +1,22 @@
+.content {
+    width: 500px;
+    max-width: 100%;
+    text-transform: uppercase;
+}
+.content h2 {
+    font-size: 30px;
+}
+.content p {
+    font-size: 14px;
+    margin-block: 15px;
+    line-height: var(--line-height);
+}
+.content .btn {
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
